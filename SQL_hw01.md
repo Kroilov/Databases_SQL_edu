@@ -2,7 +2,7 @@
 CREATE DATABASE hw01;
 USE hw01;
 CREATE TABLE mobile_phones(
-	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     product_name VARCHAR(45) NOT NULL,
     manufacturer VARCHAR(45) NOT NULL,
     product_count INT UNSIGNED,
@@ -11,8 +11,8 @@ CREATE TABLE mobile_phones(
     
 INSERT INTO mobile_phones(product_name, manufacturer, product_count, price)
 VALUES
-	('NOKIA 3310', 'Nokia', 344, 4300),
-	('NOKIA 6600', 'Nokia', 12, 7300),
+    ('NOKIA 3310', 'Nokia', 344, 4300),
+    ('NOKIA 6600', 'Nokia', 12, 7300),
     ('iPhone XS', 'Apple', 43, 23544),
     ('iPhone 11', 'Apple', 12, 43333),
     ('P20', 'Huawei', 3, 30400);
