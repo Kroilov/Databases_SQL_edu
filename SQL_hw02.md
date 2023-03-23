@@ -1,7 +1,7 @@
 ```mySQL
 CREATE TABLE sales
 (
-	  id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     order_date DATE,
     count_product INT UNSIGNED
 );
@@ -14,8 +14,8 @@ VALUES
 	('2022-01-05', 341);
 
 SELECT id,
-	CASE
-		    WHEN count_product < 100 THEN 'Small order'
+    CASE
+	WHEN count_product < 100 THEN 'Small order'
         WHEN count_product >= 100 AND count_product <= 300 THEN 'Medium order'
         ELSE 'Large order'
 	END AS order_type
@@ -25,8 +25,8 @@ FROM sales;
 ```mySQL
 CREATE TABLE orders
 (
-	  id INT AUTO_INCREMENT PRIMARY KEY,
-	  employee_id VARCHAR(16) NOT NULL,
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id VARCHAR(16) NOT NULL,
     amount FLOAT,
     order_status VARCHAR(16)
 );
@@ -40,8 +40,8 @@ VALUES
 	('e04', 9.50, 'CANCELLED');
 
 SELECT id,
-	CASE
-		    WHEN order_status = 'OPEN' THEN 'Order is in open state'
+    CASE
+        WHEN order_status = 'OPEN' THEN 'Order is in open state'
         WHEN order_status = 'CLOSED' THEN 'Order is closed'
         WHEN order_status = 'CANCELLED' THEN 'Order is cancelled'
         ELSE 'Undefined'
