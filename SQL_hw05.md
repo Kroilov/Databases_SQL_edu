@@ -33,5 +33,3 @@ created_at as 'created',
 FROM messages ORDER BY created_at;
 ```
 ![image](https://user-images.githubusercontent.com/118007838/230639810-9539fe8b-139a-4ed4-b2e1-2ce30f4085d3.png)
-
-### 4. 
